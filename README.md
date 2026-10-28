@@ -2,22 +2,25 @@
 
 ## Features
 
-- Press on M5 button will toggle between 4 screens:
-    1.  The actual status of the tally (a tally status change will default back to this screen)
+- Press on M5 button will toggle between 6 screens:
+    1.  The current status of the tally (a tally status change will default back to this screen)
     2.  Network screen, showing the current IP Address so you can access the Web UI (+ a wifi strength indicator)
-    3.  Show the actual tally input number that is set for the unit
-    4.  The brightness screen. You can use BtnB on this screen to toggle through the 6 different settings
+    3.  Show and set the tally input number for the unit
+    4.  The brightness screen, toggle through 6 different settings
+    5.  The mode screen, to show words or camera number
+    6.  The just live screen, to show LIVE-PRE-SAFE or LIVE-SAFE
 - Webserver for easy configuration
 - Access Point mode when not connected to a WiFi network
 - Data is saved to memory, will be remembered after device is turned off
-- Dedicated button to reconnect to Tricaster (BtnB, will reconnect to Tricaster except on the brightness screen)
+- Dedicated button to reconnect to Tricaster (side button, will reconnect to Tricaster on main screen)
 - Holding the same button at the end of trying to reconnect will reset the settings
 - Dark Web UI
 - Ability to adjust the brightness (either on the stick itself, or via the Web UI)
 - Battery indicator
 - Landscape & Portrait mode using accelerometer
-- Change tally number input on the fly. On the tally input number screen, double click the BtnB to increase the number. Long click for reset to 1
-- Automatic wifi scanning to easily select your wifi network
+- Change tally number input on the fly. On the tally input number screen, click the side button to increase the number, Long click for reset to 1
+- Manually enter 2 wifi networks on web config
+- Automatic wifi scanning to select a third wifi network
 - Set an interval to automatically reconnect to Tricaster after the interval has passed
 - Option to just show the LIVE state and ignore the PRE and SAFE states
 - Option to show the tally number instead of the SAFE, PRE and LIVE texts
@@ -69,7 +72,7 @@ Fill in the network name (not the IP) of the Tricaster.
 
 **Reconnect interval**
 
-Input is in seconds. This will try to reconnect to Tricaster every 'x' seconds after the interval has passed when it's disconnected. This will loop if the connection cannot be established. 
+Input is in seconds. This will try to reconnect to Tricaster every 'x' seconds after the interval has passed when it's disconnected.
 
 WARNING: Since the stick is single threaded, when the stick tries to reconnect to Tricaster, the Web UI is not accessible! 
 
