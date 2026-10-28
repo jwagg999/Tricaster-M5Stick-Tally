@@ -24,6 +24,7 @@
 - Set an interval to automatically reconnect to Tricaster after the interval has passed
 - Option to just show the LIVE state and ignore the PRE and SAFE states
 - Option to show the tally number instead of the SAFE, PRE and LIVE texts
+- A free hot shoe mount can be found on [Thingiverse](https://www.thingiverse.com/thing:4793782).
 
 ---
 
